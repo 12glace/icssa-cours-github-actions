@@ -1,7 +1,10 @@
 /**
  * This is a the pencil class
  */
+
 export default class Pencil {
+  
+
   constructor(durability = 50, length = 50, eraserDurability) {
     this.durability = durability;
     this.maxDurability = durability;
@@ -10,7 +13,7 @@ export default class Pencil {
   }
 
   getPencilDurability() {
-    return durability;
+    return this.durability;
   }
 
   getPencilLength() {
