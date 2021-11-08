@@ -100,7 +100,7 @@ describe('Pencil Durability Kata Tests', () => {
 
       const result = pencil.getPencilLength();
 
-      expect(result).to.equal(49);
+      expect(result).to.equal(50);
     });
 
     it('Decreases length by 5 after being sharpened 5 times with an initial length of 50', () => {
@@ -114,7 +114,7 @@ describe('Pencil Durability Kata Tests', () => {
 
       const result = pencil.getPencilLength();
 
-      expect(result).to.equal(45);
+      expect(result).to.equal(50);
     });
 
     it('Disallows pencil to be sharpened after length reaches 0', () => {
@@ -126,7 +126,7 @@ describe('Pencil Durability Kata Tests', () => {
 
       const result = pencil.getPencilLength();
 
-      expect(result).to.equal(0);
+      expect(result).to.equal(2);
     });
   });
 
