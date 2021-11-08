@@ -7,8 +7,9 @@
     "test": "mocha --require @babel/register",
     "prettier": "prettier --write --bracket-spacing --single-quote --semi --range-end 120 --arrow-parens always .",
     "eslint": "eslint --init",
-    "jsdoc": "jsdoc"
-
+    "jsdoc": "jsdoc",
+    "prepare": "husky install",
+    "create-hook": "husky add .husky/pre-commit \"npm test\""
   },
   "keywords": [],
   "author": "",
@@ -22,9 +23,18 @@
     "chai": "^4.2.0",
     "eslint": "^8.1.0",
     "eslint-plugin-react": "^7.26.1",
+    "husky": "^7.0.4",
     "jsdoc": "^3.6.7",
+    "lint-staged": "^11.2.6",
     "mocha": "^6.2.0",
     "prettier": "2.4.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+  
 }
+
+

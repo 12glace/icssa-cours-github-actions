@@ -44,7 +44,7 @@ export default class Pencil {
 
     return paper;
   }
-
+   
   sharpen() {
     if (this.length) {
       this.updatePencilLength;

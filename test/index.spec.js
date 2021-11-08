@@ -129,7 +129,7 @@ describe('Pencil Durability Kata Tests', () => {
       expect(result).to.equal(2);
     });
   });
-
+  
   describe('Erasing', () => {
     it("Erases the last instance of 'sea' off the paper with text", () => {
       const pencil = new Pencil();
